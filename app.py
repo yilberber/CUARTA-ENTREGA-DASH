@@ -9,7 +9,7 @@ import pandas as pd
 from PIL import Image 
 from dash import html
 app = dash.Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP])
-                
+server = app.server  
 app.layout = layout
 
 @app.callback(
